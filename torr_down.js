@@ -2,169 +2,169 @@
     'use strict';
 
     function Component$1() {
-        Lampa.Lang.add({
-            pathMovie: {
-                "ru": "Путь сохранения фильмов",
-                "en": "Path to save movies",
-                "uk": "Шлях збереження фільмів"
-            },
-            pathTV: {
-                "ru": "Путь сохранения сериалов",
-                "en": "Path to save TV shows",
-                "uk": "Шлях збереження серіалів"
-            },
-            universalAction: {
-                ru: "Действие",
-                en: "Action",
-                uk: "Дія",
-                zh: "行动"
-            },
-            openUniversal: {
-                ru: "Открывать в клиенте",
-                en: "Open in external client",
-                uk: "Відкрити у застосунку",
-                zh: "在外部客户端打开"
-            },
-            openSystemApp: {
-                ru: "Открыть в системном приложении",
-                en: "Open in system app",
-                uk: "Відкрити в системному застосунку",
-                zh: "在系统应用中打开"
-            },
-            copyUniversal: {
-                ru: "Копировать ссылку",
-                en: "Copy link",
-                uk: "Скопіювати посилання",
-                zh: "复制到缓冲区"
-            },
-            tweak: {
-                ru: "Tweak",
-                en: "Tweak",
-                uk: "Tweak",
-                zh: "高级设置"
-            },
-            LMEProxy: {
-                ru: "Прокси",
-                en: "Proxy",
-                uk: "Проксі",
-                zh: "Proxy"
-            },
-            LMEProxyDescription: {
-                en: "The proxy service from the LME project can help when connecting through external addresses. For example, Keenetic or Synology DNS",
-                ru: "Прокси сервис от проекта LME, может помочь при подключении через внешние адреса. Например Keenetic или Synology DNS",
-                uk: "Проксі-сервіс від проєкту LME може допомогти при підключенні через зовнішні адреси. Наприклад, Keenetic або Synology DNS"
-            },
-            TransmissionRPCRoute: {
-                ru: "RPC Path",
-                en: "RPC Path",
-                uk: "RPC Path",
-                zh: "RPC 路径"
-            },
-            TransmissionRPCRouteDescription: {
-                ru: "Изменение пути API. Не трогать без необходимости, если используете KeenDNS указать /app/transmission/rpc",
-                en: "Change api route. Do not change without need, if you use KeenDNS, specify /app/transmission/rpc",
-                uk: "Змінити маршрут API. Не чіпати без нагальної потреби, якщо ви використовуєте KeenDNS, вкажіть /app/transmission/rpc",
-                zh: "更改API路径。如无必要，请勿更改, 如使用 KeenDNS，请指定 /app/transmission/rpc"
-            },
-            //Auth
-            AuthSuccess: {
-                en: "Authentication successful",
-                ru: "Аутентификация успешна",
-                uk: "Аутентифікація успішна"
-            },
-            AuthDenied: {
-                en: "Authentication denied",
-                ru: "Аутентификация отклонена",
-                uk: "Аутентифікацію відхилено"
-            },
-            //Panel
-            clientNotClient: {
-                en: "Either the client is not configured or the server is not responding, check the console, you might find the answer there",
-                ru: "Или клиент не настроен или сервер не отвечает, узри консоль, возможно там найдешь ответ",
-                uk: "Або клієнт не налаштований, або сервер не відповідає, перевір консоль, можливо там знайдеш відповідь"
-            },
-            somethingWentWrong: {
-                en: "Something went wrong",
-                ru: "Что-то пошло не так",
-                uk: "Щось пішло не так"
-            },
-            //Panel action
-            actionWithTorrent: {
-                en: "Action with torrent",
-                ru: "Действие с торрентом",
-                uk: "Дія з торрентом"
-            },
-            resume: {
-                en: "Resume",
-                ru: "Возобновить",
-                uk: "Відновити"
-            },
-            pause: {
-                en: "Pause",
-                ru: "Пауза",
-                uk: "Пауза"
-            },
-            "delete": {
-                en: "Delete",
-                ru: "Удалить",
-                uk: "Видалити"
-            },
-            fullDelete: {
-                en: "Full delete",
-                ru: "Полное удаление",
-                uk: "Повне видалення"
-            },
-            actionSentSuccessfully: {
-                "en": "Action sent successfully",
-                "ru": "Действие успешно отправлено",
-                "uk": "Дію успішно надіслано"
-            },
-            actionReturnedError: {
-                en: "Action returned an error",
-                ru: "Действие вернуло ошибку",
-                uk: "Дія повернула помилку"
-            },
-            torrent_select_file: {
-                en: "Select file to play",
-                ru: "Выберите файл для воспроизведения",
-                uk: "Виберіть файл для відтворення"
-            },
-            sort_by_name: {
-                en: "Sort by name",
-                ru: "Сортировать по имени",
-                uk: "Сортувати за назвою"
-            },
-            sort_by_size: {
-                en: "Sort by size",
-                ru: "Сортировать по размеру",
-                uk: "Сортувати за розміром"
-            },
-            sort_by_progress: {
-                en: "Sort by progress",
-                ru: "Сортировать по прогрессу",
-                uk: "Сортувати за прогресом"
-            },
-            openCard: {
-                en: "Open",
-                ru: "Открыть",
-                uk: "Відкрити"
-            },
-            add_metadata: {
-                en: "Add metadata",
-                ru: "Добавить метаданные",
-                uk: "Додати метадані"
-            },
-            add_metadata_all: {
-                en: "Parse all",
-                ru: "Парсить все",
-                uk: "Парсити все"
-            },
-            selectResult: {
-                en: "Select result",
-                ru: "Выберите результат",
-                uk: "Виберіть результат"
-            }
-        });
+      Lampa.Lang.add({
+        pathMovie: {
+          "ru": "Путь сохранения фильмов",
+          "en": "Path to save movies",
+          "uk": "Шлях збереження фільмів"
+        },
+        pathTV: {
+          "ru": "Путь сохранения сериалов",
+          "en": "Path to save TV shows",
+          "uk": "Шлях збереження серіалів"
+        },
+        universalAction: {
+          ru: "Действие",
+          en: "Action",
+          uk: "Дія",
+          zh: "行动"
+        },
+        openUniversal: {
+          ru: "Открывать в клиенте",
+          en: "Open in external client",
+          uk: "Відкрити у застосунку",
+          zh: "在外部客户端打开"
+        },
+        openSystemApp: {
+        ru: "Открыть в системном приложении",
+        en: "Open in system app",
+        uk: "Відкрити в системному застосунку",
+        zh: "在系统应用中打开"
+        },
+        copyUniversal: {
+          ru: "Копировать ссылку",
+          en: "Copy link",
+          uk: "Скопіювати посилання",
+          zh: "复制到缓冲区"
+        },
+        tweak: {
+          ru: "Tweak",
+          en: "Tweak",
+          uk: "Tweak",
+          zh: "高级设置"
+        },
+        LMEProxy: {
+          ru: "Прокси",
+          en: "Proxy",
+          uk: "Проксі",
+          zh: "Proxy"
+        },
+        LMEProxyDescription: {
+          en: "The proxy service from the LME project can help when connecting through external addresses. For example, Keenetic or Synology DNS",
+          ru: "Прокси сервис от проекта LME, может помочь при подключении через внешние адреса. Например Keenetic или Synology DNS",
+          uk: "Проксі-сервіс від проєкту LME може допомогти при підключенні через зовнішні адреси. Наприклад, Keenetic або Synology DNS"
+        },
+        TransmissionRPCRoute: {
+          ru: "RPC Path",
+          en: "RPC Path",
+          uk: "RPC Path",
+          zh: "RPC 路径"
+        },
+        TransmissionRPCRouteDescription: {
+          ru: "Изменение пути API. Не трогать без необходимости, если используете KeenDNS указать /app/transmission/rpc",
+          en: "Change api route. Do not change without need, if you use KeenDNS, specify /app/transmission/rpc",
+          uk: "Змінити маршрут API. Не чіпати без нагальної потреби, якщо ви використовуєте KeenDNS, вкажіть /app/transmission/rpc",
+          zh: "更改API路径。如无必要，请勿更改, 如使用 KeenDNS，请指定 /app/transmission/rpc"
+        },
+        //Auth
+        AuthSuccess: {
+          en: "Authentication successful",
+          ru: "Аутентификация успешна",
+          uk: "Аутентифікація успішна"
+        },
+        AuthDenied: {
+          en: "Authentication denied",
+          ru: "Аутентификация отклонена",
+          uk: "Аутентифікацію відхилено"
+        },
+        //Panel
+        clientNotClient: {
+          en: "Either the client is not configured or the server is not responding, check the console, you might find the answer there",
+          ru: "Или клиент не настроен или сервер не отвечает, узри консоль, возможно там найдешь ответ",
+          uk: "Або клієнт не налаштований, або сервер не відповідає, перевір консоль, можливо там знайдеш відповідь"
+        },
+        somethingWentWrong: {
+          en: "Something went wrong",
+          ru: "Что-то пошло не так",
+          uk: "Щось пішло не так"
+        },
+        //Panel action
+        actionWithTorrent: {
+          en: "Action with torrent",
+          ru: "Действие с торрентом",
+          uk: "Дія з торрентом"
+        },
+        resume: {
+          en: "Resume",
+          ru: "Возобновить",
+          uk: "Відновити"
+        },
+        pause: {
+          en: "Pause",
+          ru: "Пауза",
+          uk: "Пауза"
+        },
+        "delete": {
+          en: "Delete",
+          ru: "Удалить",
+          uk: "Видалити"
+        },
+        fullDelete: {
+          en: "Full delete",
+          ru: "Полное удаление",
+          uk: "Повне видалення"
+        },
+        actionSentSuccessfully: {
+          "en": "Action sent successfully",
+          "ru": "Действие успешно отправлено",
+          "uk": "Дію успішно надіслано"
+        },
+        actionReturnedError: {
+          en: "Action returned an error",
+          ru: "Действие вернуло ошибку",
+          uk: "Дія повернула помилку"
+        },
+        torrent_select_file: {
+          en: "Select file to play",
+          ru: "Выберите файл для воспроизведения",
+          uk: "Виберіть файл для відтворення"
+        },
+        sort_by_name: {
+          en: "Sort by name",
+          ru: "Сортировать по имени",
+          uk: "Сортувати за назвою"
+        },
+        sort_by_size: {
+          en: "Sort by size",
+          ru: "Сортировать по размеру",
+          uk: "Сортувати за розміром"
+        },
+        sort_by_progress: {
+          en: "Sort by progress",
+          ru: "Сортировать по прогрессу",
+          uk: "Сортувати за прогресом"
+        },
+        openCard: {
+          en: "Open",
+          ru: "Открыть",
+          uk: "Відкрити"
+        },
+        add_metadata: {
+          en: "Add metadata",
+          ru: "Добавить метаданные",
+          uk: "Додати метадані"
+        },
+        add_metadata_all: {
+          en: "Parse all",
+          ru: "Парсить все",
+          uk: "Парсити все"
+        },
+        selectResult: {
+          en: "Select result",
+          ru: "Выберите результат",
+          uk: "Виберіть результат"
+        }
+      });
     }
 
     function _arrayLikeToArray(r, a) {
@@ -3510,587 +3510,587 @@
     }
 
     function Main$1(manifest) {
-        //Создание пункта меню
-        Lampa.SettingsApi.addComponent({
-            component: manifest.component,
-            name: manifest.name,
-            icon: manifest.icon
-        });
-        //Select Client
+      //Создание пункта меню
+      Lampa.SettingsApi.addComponent({
+        component: manifest.component,
+        name: manifest.name,
+        icon: manifest.icon
+      });
+      //Select Client
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + 'Select',
+          type: 'select',
+          "default": 'no_client',
+          values: {
+            no_client: 'None',
+            universalClient: "Universal",
+            qBittorent: "qBittorent",
+            transmission: "Transmission",
+            keenetic: "Keenetic Transmission",
+            synology: "Synology"
+          }
+        },
+        field: {
+          name: "Выбор клиента"
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      //Proxy TMDB
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + 'proxyTMDB',
+          type: 'trigger',
+          "default": 'false',
+          values: {
+            "true": Lampa.Lang.translate('true'),
+            "false": Lampa.Lang.translate('false')
+          }
+        },
+        field: {
+          name: 'Proxy TMDB posters'
+        },
+        onRender: function onRender(item) {
+          var forbiddenValues = ["universalClient", "synology", "no_client"];
+          var clientValue = Lampa.Storage.field(manifest.component + 'proxyTMDB');
+          // indexOf возвращает -1, если значения нет в массиве
+          if (forbiddenValues.indexOf(clientValue) === -1) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      //Universal action
         Lampa.SettingsApi.addParam({
             component: manifest.component,
             param: {
-                name: manifest.component + 'Select',
-                type: 'select',
-                "default": 'no_client',
-                values: {
-                    no_client: 'None',
-                    universalClient: "Universal",
-                    qBittorent: "qBittorent",
-                    transmission: "Transmission",
-                    keenetic: "Keenetic Transmission",
-                    synology: "Synology"
-                }
-            },
-            field: {
-                name: "Выбор клиента"
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
+            name: manifest.component + 'UniversalAction',
+            type: 'select',
+            default: 'open',
+            values: {
+                open: Lampa.Lang.translate('openUniversal'),
+                click: Lampa.Lang.translate('copyUniversal')
             }
-        });
-        //Proxy TMDB
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + 'proxyTMDB',
-                type: 'trigger',
-                "default": 'false',
-                values: {
-                    "true": Lampa.Lang.translate('true'),
-                    "false": Lampa.Lang.translate('false')
-                }
             },
             field: {
-                name: 'Proxy TMDB posters'
-            },
-            onRender: function onRender(item) {
-                var forbiddenValues = ["universalClient", "synology", "no_client"];
-                var clientValue = Lampa.Storage.field(manifest.component + 'proxyTMDB');
-                // indexOf возвращает -1, если значения нет в массиве
-                if (forbiddenValues.indexOf(clientValue) === -1) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        //Universal action
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + 'UniversalAction',
-                type: 'select',
-                default: 'open',
-                values: {
-                    open: Lampa.Lang.translate('openUniversal'),
-                    click: Lampa.Lang.translate('copyUniversal')
-                }
-            },
-            field: {
-                name: Lampa.Lang.translate('universalAction'),
-                description: 'Действие для кнопки "Открыть в клиенте". На Android также доступна отдельная кнопка "Открыть в системном приложении"'
+            name: Lampa.Lang.translate('universalAction'),
+            description: 'Действие для кнопки "Открыть в клиенте". На Android также доступна отдельная кнопка "Открыть в системном приложении"'
             },
             onRender: function(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "universalClient") {
-                    item.show();
-                } else item.hide();
+            if (Lampa.Storage.field(manifest.component + 'Select') === "universalClient") {
+                item.show();
+            } else item.hide();
             },
             onChange: function(value) {
-                Lampa.Settings.update();
+            Lampa.Settings.update();
             }
         });
-        //qBittorent
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentUrl",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                //values: `${Lampa.Storage.get("qBittorentUrl") || ""}`,
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: "Address"
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false,
-                name: manifest.component + "qBittorentTweak"
-            },
-            field: {
-                name: Lampa.Lang.translate('tweak')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        // qBittorent Tweak part
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentSequentialDownload",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false
-            },
-            field: {
-                name: 'Sequential Download'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentfirstLastPiecePrio",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false
-            },
-            field: {
-                name: 'Prioritize download first last piece'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentProxy",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false
-            },
-            field: {
-                name: Lampa.Lang.translate('LMEProxy'),
-                description: Lampa.Lang.translate('LMEProxyDescription')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentMovies",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathMovie')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "qBittorentTV",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathTV')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        //Transmission
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionUrl",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Address'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionUser",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Login'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionPass",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Password'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false,
-                name: manifest.component + "transmissionTweak"
-            },
-            field: {
-                name: Lampa.Lang.translate('tweak')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        // Transmission Tweak part
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionAutostart",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": true
-            },
-            field: {
-                name: 'Autostop'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionSequentialDownload",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false
-            },
-            field: {
-                name: 'SequentialDownload'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionProxy",
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false
-            },
-            field: {
-                name: Lampa.Lang.translate('LMEProxy'),
-                description: Lampa.Lang.translate('LMEProxyDescription')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(value) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionPath",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '/transmission/rpc',
-                values: '/transmission/rpc',
-                "default": '/transmission/rpc'
-            },
-            field: {
-                name: Lampa.Lang.translate('TransmissionRPCRoute'),
-                description: Lampa.Lang.translate('TransmissionRPCRouteDescription')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionMovies",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathMovie')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "transmissionTV",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathTV')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        //Synology
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "synologyUrl",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                //values: `${Lampa.Storage.get("synologyUrl") || ""}`,
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Address'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "synologyUser",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Login'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "synologyPass",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: 'Password'
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "synologyPathMovies",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathMovie')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                name: manifest.component + "synologyPathTV",
-                type: "input",
-                //доступно select,input,trigger,title,static
-                placeholder: '',
-                values: '',
-                "default": ''
-            },
-            field: {
-                name: Lampa.Lang.translate('pathTV')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        Lampa.SettingsApi.addParam({
-            component: manifest.component,
-            param: {
-                type: "trigger",
-                //доступно select,input,trigger,title,static
-                "default": false,
-                name: manifest.component + "synologyProxy"
-            },
-            field: {
-                name: Lampa.Lang.translate('LMEProxy'),
-                description: Lampa.Lang.translate('LMEProxyDescription')
-            },
-            onRender: function onRender(item) {
-                if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
-                    item.show();
-                } else item.hide();
-            },
-            onChange: function onChange(item) {
-                Lampa.Settings.update();
-            }
-        });
-        // Synology Tweak part
+      //qBittorent
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentUrl",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          //values: `${Lampa.Storage.get("qBittorentUrl") || ""}`,
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: "Address"
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false,
+          name: manifest.component + "qBittorentTweak"
+        },
+        field: {
+          name: Lampa.Lang.translate('tweak')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      // qBittorent Tweak part
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentSequentialDownload",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false
+        },
+        field: {
+          name: 'Sequential Download'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentfirstLastPiecePrio",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false
+        },
+        field: {
+          name: 'Prioritize download first last piece'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentProxy",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false
+        },
+        field: {
+          name: Lampa.Lang.translate('LMEProxy'),
+          description: Lampa.Lang.translate('LMEProxyDescription')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentMovies",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathMovie')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "qBittorentTV",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathTV')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "qBittorent" && Lampa.Storage.field(manifest.component + "qBittorentTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      //Transmission
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionUrl",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Address'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionUser",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Login'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionPass",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Password'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false,
+          name: manifest.component + "transmissionTweak"
+        },
+        field: {
+          name: Lampa.Lang.translate('tweak')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      // Transmission Tweak part
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionAutostart",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": true
+        },
+        field: {
+          name: 'Autostop'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionSequentialDownload",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false
+        },
+        field: {
+          name: 'SequentialDownload'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionProxy",
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false
+        },
+        field: {
+          name: Lampa.Lang.translate('LMEProxy'),
+          description: Lampa.Lang.translate('LMEProxyDescription')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(value) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionPath",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '/transmission/rpc',
+          values: '/transmission/rpc',
+          "default": '/transmission/rpc'
+        },
+        field: {
+          name: Lampa.Lang.translate('TransmissionRPCRoute'),
+          description: Lampa.Lang.translate('TransmissionRPCRouteDescription')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionMovies",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathMovie')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "transmissionTV",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathTV')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "transmission" && Lampa.Storage.field(manifest.component + "transmissionTweak") === true) {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      //Synology
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "synologyUrl",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          //values: `${Lampa.Storage.get("synologyUrl") || ""}`,
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Address'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "synologyUser",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Login'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "synologyPass",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: 'Password'
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "synologyPathMovies",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathMovie')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          name: manifest.component + "synologyPathTV",
+          type: "input",
+          //доступно select,input,trigger,title,static
+          placeholder: '',
+          values: '',
+          "default": ''
+        },
+        field: {
+          name: Lampa.Lang.translate('pathTV')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      Lampa.SettingsApi.addParam({
+        component: manifest.component,
+        param: {
+          type: "trigger",
+          //доступно select,input,trigger,title,static
+          "default": false,
+          name: manifest.component + "synologyProxy"
+        },
+        field: {
+          name: Lampa.Lang.translate('LMEProxy'),
+          description: Lampa.Lang.translate('LMEProxyDescription')
+        },
+        onRender: function onRender(item) {
+          if (Lampa.Storage.field(manifest.component + 'Select') === "synology") {
+            item.show();
+          } else item.hide();
+        },
+        onChange: function onChange(item) {
+          Lampa.Settings.update();
+        }
+      });
+      // Synology Tweak part
 
         // Keenetic Transmission
         Lampa.SettingsApi.addParam({
@@ -4334,187 +4334,183 @@
         });
     }
 
-    function Main(selectedTorrent, useSystemApp) {
-        useSystemApp = useSystemApp || false; // Заменяем параметр по умолчанию
-        if (useSystemApp) {
-            // Новая логика для системного приложения
-            if (Lampa.Platform.is('android')) {
-                try {
-                    var magnetUrl = selectedTorrent.MagnetUri || selectedTorrent.Link;
-    
-                    // Создаем Intent для открытия magnet ссылки в системном торрент-клиенте
-                    var intent = {
-                        action: 'android.intent.action.VIEW',
-                        data: magnetUrl,
-                        type: 'application/x-bittorrent'
-                    };
-    
-                    // Используем Android Bridge для запуска Intent
-                    if (window.Android && window.Android.startActivity) {
-                        window.Android.startActivity(JSON.stringify(intent));
-                    } else {
-                        // Альтернативный способ через создание ссылки
-                        var link = document.createElement('a');
-                        link.href = magnetUrl;
-                        link.setAttribute('target', '_system');
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                    }
-    
-                    Lampa.Bell.push({
-                        text: 'Торрент отправлен в системное приложение'
-                    });
-                } catch (error) {
-                    console.error('Ошибка открытия в системном приложении:', error);
-                    Lampa.Bell.push({
-                        text: 'Ошибка открытия в системном приложении'
-                    });
-                }
+    function Main(selectedTorrent, useSystemApp = false) {
+    if (useSystemApp) {
+        // Новая логика для системного приложения
+        if (Lampa.Platform.is('android')) {
+        try {
+            const magnetUrl = selectedTorrent.MagnetUri || selectedTorrent.Link;
+            
+            // Создаем Intent для открытия magnet ссылки в системном торрент-клиенте
+            const intent = {
+            action: 'android.intent.action.VIEW',
+            data: magnetUrl,
+            type: 'application/x-bittorrent'
+            };
+            
+            // Используем Android Bridge для запуска Intent
+            if (window.Android && window.Android.startActivity) {
+            window.Android.startActivity(JSON.stringify(intent));
             } else {
-                // На не-Android платформах используем обычную логику
-                if (Lampa.Storage.field("lmetorrentUniversalAction") === "open") {
-                    window.location.assign(selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link);
-                } else {
-                    Lampa.Utils.copyTextToClipboard(
-                        selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link,
-                        function() {
-                            Lampa.Bell.push({
-                                text: Lampa.Lang.translate('copy_secuses')
-                            });
-                        },
-                        function() {
-                            Lampa.Bell.push({
-                                text: Lampa.Lang.translate('copy_error')
-                            });
-                        }
-                    );
-                }
+            // Альтернативный способ через создание ссылки
+            const link = document.createElement('a');
+            link.href = magnetUrl;
+            link.setAttribute('target', '_system');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
             }
-        } else {
-            // Существующая логика для обычного режима
-            if (Lampa.Storage.field("lmetorrentUniversalAction") === "open") {
-                window.location.assign(selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link);
-            } else {
-                Lampa.Utils.copyTextToClipboard(
-                    selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link,
-                    function() {
-                        Lampa.Bell.push({
-                            text: Lampa.Lang.translate('copy_secuses')
-                        });
-                    },
-                    function() {
-                        Lampa.Bell.push({
-                            text: Lampa.Lang.translate('copy_error')
-                        });
-                    }
-                );
-            }
+            
+            Lampa.Bell.push({
+            text: 'Торрент отправлен в системное приложение'
+            });
+        } catch (error) {
+            console.error('Ошибка открытия в системном приложении:', error);
+            Lampa.Bell.push({
+            text: 'Ошибка открытия в системном приложении'
+            });
         }
+        } else {
+        // На не-Android платформах используем обычную логику
+        if (Lampa.Storage.field("lmetorrentUniversalAction") === "open") {
+            window.location.assign(selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link);
+        } else {
+            Lampa.Utils.copyTextToClipboard(
+            selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link,
+            function() {
+                Lampa.Bell.push({
+                text: Lampa.Lang.translate('copy_secuses')
+                });
+            },
+            function() {
+                Lampa.Bell.push({
+                text: Lampa.Lang.translate('copy_error')
+                });
+            }
+            );
+        }
+        }
+    } else {
+        // Существующая логика для обычного режима
+        if (Lampa.Storage.field("lmetorrentUniversalAction") === "open") {
+        window.location.assign(selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link);
+        } else {
+        Lampa.Utils.copyTextToClipboard(
+            selectedTorrent.MagnetUri ? selectedTorrent.MagnetUri : selectedTorrent.Link,
+            function() {
+            Lampa.Bell.push({
+                text: Lampa.Lang.translate('copy_secuses')
+            });
+            },
+            function() {
+            Lampa.Bell.push({
+                text: Lampa.Lang.translate('copy_error')
+            });
+            }
+        );
+        }
+    }
     }
 
     //Import Clients
     function Send() {
-        function send2qBittorrent(selectedTorrent, labels, dtype) {
-            Qbittorent.SendTask(selectedTorrent, labels, dtype);
-        }
+      function send2qBittorrent(selectedTorrent, labels, dtype) {
+        Qbittorent.SendTask(selectedTorrent, labels, dtype);
+      }
+      function send2synology(selectedTorrent, labels, dtype) {
+        Synology.SendTask(selectedTorrent, labels, dtype);
+      }
+      function send2transmission(selectedTorrent, labels, dtype) {
+        Transmission.SendTask(selectedTorrent, labels, dtype);
+      }
+      function send2keenetic(selectedTorrent, labels, dtype) {
+        Keenetic.SendTask(selectedTorrent, labels, dtype);
+      }
+    function send2universal(selectedTorrent, labels) {
+        Main(selectedTorrent, false); // false = обычный режим
+    }
+    
+    function send2systemApp(selectedTorrent, labels) {
+        Main(selectedTorrent, true); // true = системное приложение
+    }
+      Lampa.Listener.follow('torrent', function (e) {
+        if (e.type === 'onlong') {
+          var _Lampa$Activity$activ, _Lampa$Activity$activ2, _Lampa$Activity$activ3;
+          var selectedTorrent = e.element;
+          var labels = "".concat((_Lampa$Activity$activ = Lampa.Activity.active().movie) !== null && _Lampa$Activity$activ !== void 0 && _Lampa$Activity$activ.first_air_date ? "tv" : "movie", "/").concat((_Lampa$Activity$activ2 = Lampa.Activity.active().movie) === null || _Lampa$Activity$activ2 === void 0 ? void 0 : _Lampa$Activity$activ2.id);
+          var dtype = (_Lampa$Activity$activ3 = Lampa.Activity.active().movie) !== null && _Lampa$Activity$activ3 !== void 0 && _Lampa$Activity$activ3.first_air_date ? "TV" : "Movies";
+          var onSelectApp = function onSelectApp(a) {
+            a.send2app(selectedTorrent, labels ? labels : null, dtype);
+          };
+          if (Lampa.Storage.field("lmetorrentSelect") === 'qBittorent') {
+            e.menu.push({
+              title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            qBittorrent</div>",
+              send2app: send2qBittorrent,
+              onSelect: onSelectApp
+            });
+          }
+          if (Lampa.Storage.field("lmetorrentSelect") === 'transmission') {
+            e.menu.push({
+              title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Transmission</div>",
+              send2app: send2transmission,
+              onSelect: onSelectApp
+            });
+          }
+          if (Lampa.Storage.field("lmetorrentSelect") === 'keenetic') {
+            e.menu.push({
+              title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Keenetic</div>",
+              send2app: send2keenetic,
+              onSelect: onSelectApp
+            });
+          }
+          if (Lampa.Storage.field("lmetorrentSelect") === 'synology') {
+            e.menu.push({
+              title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Synology</div>",
+              send2app: send2synology,
+              onSelect: onSelectApp
+            });
+          }
+          //Universal
+          if (Lampa.Storage.field("lmetorrentSelect") === 'universalClient') {
+            // Существующая опция "Открыть в клиенте"
+            e.menu.push({
+            title: `<div class="btnTDdownload wait">
+                        <svg class="btnTDdownload" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier"> 
+                            <path d="M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                            <path d="M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                            <path d="M18 17H12H6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> 
+                            <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" stroke="#ffffff" stroke-width="1.5"></path> 
+                        </g>
+                        </svg>
+                        ${Lampa.Lang.translate('openUniversal')}
+                    </div>`,
+            send2app: send2universal,
+            onSelect: onSelectApp
+            });
 
-        function send2synology(selectedTorrent, labels, dtype) {
-            Synology.SendTask(selectedTorrent, labels, dtype);
+            // Новая опция "Открыть в системном приложении"
+            if (Lampa.Platform.is('android')) {
+            e.menu.push({
+                title: `<div class="btnTDdownload wait">
+                        <svg class="btnTDdownload" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-264.000000, -96.000000)" fill="#ffffff">
+                                <path d="M276,112 C277.1,112 278,111.1 278,110 C278,108.9 277.1,108 276,108 C274.9,108 274,108.9 274,110 C274,111.1 274.9,112 276,112 Z M276,96 C269.4,96 264,101.4 264,108 C264,114.6 269.4,120 276,120 C282.6,120 288,114.6 288,108 C288,101.4 282.6,96 276,96 Z M280.2,99.4 C279.5,98.7 278.8,98.7 278.1,99.4 L273.9,103.6 C273.2,104.3 273.2,105 273.9,105.7 C274.6,106.4 275.3,106.4 276,105.7 L278.2,103.5 L278.2,111 C278.2,111.9 279.1,112.8 280,112.8 C280.9,112.8 281.8,111.9 281.8,111 L281.8,103.5 L284,105.7 C284.7,106.4 285.4,106.4 286.1,105.7 C286.8,105 286.8,104.3 286.1,103.6 L280.2,99.4 Z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        ${Lampa.Lang.translate('openSystemApp')}
+                        </div>`,
+                send2app: send2systemApp,
+                onSelect: onSelectApp
+            });
+            }
         }
-
-        function send2transmission(selectedTorrent, labels, dtype) {
-            Transmission.SendTask(selectedTorrent, labels, dtype);
         }
-
-        function send2keenetic(selectedTorrent, labels, dtype) {
-            Keenetic.SendTask(selectedTorrent, labels, dtype);
-        }
-
-        function send2universal(selectedTorrent, labels) {
-            Main(selectedTorrent, false); // false = обычный режим
-        }
-
-        function send2systemApp(selectedTorrent, labels) {
-            Main(selectedTorrent, true); // true = системное приложение
-        }
-        Lampa.Listener.follow('torrent', function(e) {
-            if (e.type === 'onlong') {
-                var _Lampa$Activity$activ, _Lampa$Activity$activ2, _Lampa$Activity$activ3;
-                var selectedTorrent = e.element;
-                var labels = "".concat((_Lampa$Activity$activ = Lampa.Activity.active().movie) !== null && _Lampa$Activity$activ !== void 0 && _Lampa$Activity$activ.first_air_date ? "tv" : "movie", "/").concat((_Lampa$Activity$activ2 = Lampa.Activity.active().movie) === null || _Lampa$Activity$activ2 === void 0 ? void 0 : _Lampa$Activity$activ2.id);
-                var dtype = (_Lampa$Activity$activ3 = Lampa.Activity.active().movie) !== null && _Lampa$Activity$activ3 !== void 0 && _Lampa$Activity$activ3.first_air_date ? "TV" : "Movies";
-                var onSelectApp = function onSelectApp(a) {
-                    a.send2app(selectedTorrent, labels ? labels : null, dtype);
-                };
-                if (Lampa.Storage.field("lmetorrentSelect") === 'qBittorent') {
-                    e.menu.push({
-                        title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            qBittorrent</div>",
-                        send2app: send2qBittorrent,
-                        onSelect: onSelectApp
-                    });
-                }
-                if (Lampa.Storage.field("lmetorrentSelect") === 'transmission') {
-                    e.menu.push({
-                        title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Transmission</div>",
-                        send2app: send2transmission,
-                        onSelect: onSelectApp
-                    });
-                }
-                if (Lampa.Storage.field("lmetorrentSelect") === 'keenetic') {
-                    e.menu.push({
-                        title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Keenetic</div>",
-                        send2app: send2keenetic,
-                        onSelect: onSelectApp
-                    });
-                }
-                if (Lampa.Storage.field("lmetorrentSelect") === 'synology') {
-                    e.menu.push({
-                        title: "<div class=\"btnTDdownload wait\">\n                            <svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path> <path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path> </g></svg>\n                            Synology</div>",
-                        send2app: send2synology,
-                        onSelect: onSelectApp
-                    });
-                }
-                //Universal
-                if (Lampa.Storage.field("lmetorrentSelect") === 'universalClient') {
-                    // Существующая опция "Открыть в клиенте"
-                    e.menu.push({
-                        title: "<div class=\"btnTDdownload wait\">" +
-                                "<svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
-                                "<g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>" +
-                                "<g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>" +
-                                "<g id=\"SVGRepo_iconCarrier\">" + 
-                                "<path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>" + 
-                                "<path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>" + 
-                                "<path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>" + 
-                                "<path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path>" + 
-                                "</g>" +
-                                "</svg>" +
-                                Lampa.Lang.translate('openUniversal') +
-                                "</div>",
-                        send2app: send2universal,
-                        onSelect: onSelectApp
-                    });
-                
-                    // Новая опция "Открыть в системном приложении"
-                    if (Lampa.Platform.is('android')) {
-                        e.menu.push({
-                            title: "<div class=\"btnTDdownload wait\">" +
-                                    "<svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
-                                    "<g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">" +
-                                    "<g transform=\"translate(-264.000000, -96.000000)\" fill=\"#ffffff\">" +
-                                    "<path d=\"M276,112 C277.1,112 278,111.1 278,110 C278,108.9 277.1,108 276,108 C274.9,108 274,108.9 274,110 C274,111.1 274.9,112 276,112 Z M276,96 C269.4,96 264,101.4 264,108 C264,114.6 269.4,120 276,120 C282.6,120 288,114.6 288,108 C288,101.4 282.6,96 276,96 Z M280.2,99.4 C279.5,98.7 278.8,98.7 278.1,99.4 L273.9,103.6 C273.2,104.3 273.2,105 273.9,105.7 C274.6,106.4 275.3,106.4 276,105.7 L278.2,103.5 L278.2,111 C278.2,111.9 279.1,112.8 280,112.8 C280.9,112.8 281.8,111.9 281.8,111 L281.8,103.5 L284,105.7 C284.7,106.4 285.4,106.4 286.1,105.7 C286.8,105 286.8,104.3 286.1,103.6 L280.2,99.4 Z\"></path>" +
-                                    "</g>" +
-                                    "</g>" +
-                                    "</svg>" +
-                                    Lampa.Lang.translate('openSystemApp') +
-                                    "</div>",
-                            send2app: send2systemApp,
-                            onSelect: onSelectApp
-                        });
-                    }
-                }
-        });
+    });
     }
 
     var client = Lampa.Storage.field('lmetorrentSelect');
