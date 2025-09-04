@@ -4334,33 +4334,34 @@
         });
     }
 
-    function Main(selectedTorrent, useSystemApp = false) {
+    function Main(selectedTorrent, useSystemApp) {
+        useSystemApp = useSystemApp || false; // Заменяем параметр по умолчанию
         if (useSystemApp) {
             // Новая логика для системного приложения
             if (Lampa.Platform.is('android')) {
                 try {
-                    const magnetUrl = selectedTorrent.MagnetUri || selectedTorrent.Link;
-
+                    var magnetUrl = selectedTorrent.MagnetUri || selectedTorrent.Link;
+    
                     // Создаем Intent для открытия magnet ссылки в системном торрент-клиенте
-                    const intent = {
+                    var intent = {
                         action: 'android.intent.action.VIEW',
                         data: magnetUrl,
                         type: 'application/x-bittorrent'
                     };
-
+    
                     // Используем Android Bridge для запуска Intent
                     if (window.Android && window.Android.startActivity) {
                         window.Android.startActivity(JSON.stringify(intent));
                     } else {
                         // Альтернативный способ через создание ссылки
-                        const link = document.createElement('a');
+                        var link = document.createElement('a');
                         link.href = magnetUrl;
                         link.setAttribute('target', '_system');
                         document.body.appendChild(link);
                         link.click();
                         document.body.removeChild(link);
                     }
-
+    
                     Lampa.Bell.push({
                         text: 'Торрент отправлен в системное приложение'
                     });
@@ -4478,42 +4479,41 @@
                 if (Lampa.Storage.field("lmetorrentSelect") === 'universalClient') {
                     // Существующая опция "Открыть в клиенте"
                     e.menu.push({
-                        title: `<div class="btnTDdownload wait">
-                        <svg class="btnTDdownload" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier"> 
-                            <path d="M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
-                            <path d="M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
-                            <path d="M18 17H12H6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> 
-                            <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" stroke="#ffffff" stroke-width="1.5"></path> 
-                        </g>
-                        </svg>
-                        ${Lampa.Lang.translate('openUniversal')}
-                    </div>`,
+                        title: "<div class=\"btnTDdownload wait\">" +
+                                "<svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
+                                "<g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>" +
+                                "<g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>" +
+                                "<g id=\"SVGRepo_iconCarrier\">" + 
+                                "<path d=\"M8.5 7L8.5 14M8.5 14L11 11M8.5 14L6 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>" + 
+                                "<path d=\"M15.5 7L15.5 14M15.5 14L18 11M15.5 14L13 11\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>" + 
+                                "<path d=\"M18 17H12H6\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>" + 
+                                "<path d=\"M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z\" stroke=\"#ffffff\" stroke-width=\"1.5\"></path>" + 
+                                "</g>" +
+                                "</svg>" +
+                                Lampa.Lang.translate('openUniversal') +
+                                "</div>",
                         send2app: send2universal,
                         onSelect: onSelectApp
                     });
-
+                
                     // Новая опция "Открыть в системном приложении"
                     if (Lampa.Platform.is('android')) {
                         e.menu.push({
-                            title: `<div class="btnTDdownload wait">
-                        <svg class="btnTDdownload" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-264.000000, -96.000000)" fill="#ffffff">
-                                <path d="M276,112 C277.1,112 278,111.1 278,110 C278,108.9 277.1,108 276,108 C274.9,108 274,108.9 274,110 C274,111.1 274.9,112 276,112 Z M276,96 C269.4,96 264,101.4 264,108 C264,114.6 269.4,120 276,120 C282.6,120 288,114.6 288,108 C288,101.4 282.6,96 276,96 Z M280.2,99.4 C279.5,98.7 278.8,98.7 278.1,99.4 L273.9,103.6 C273.2,104.3 273.2,105 273.9,105.7 C274.6,106.4 275.3,106.4 276,105.7 L278.2,103.5 L278.2,111 C278.2,111.9 279.1,112.8 280,112.8 C280.9,112.8 281.8,111.9 281.8,111 L281.8,103.5 L284,105.7 C284.7,106.4 285.4,106.4 286.1,105.7 C286.8,105 286.8,104.3 286.1,103.6 L280.2,99.4 Z"></path>
-                            </g>
-                            </g>
-                        </svg>
-                        ${Lampa.Lang.translate('openSystemApp')}
-                        </div>`,
+                            title: "<div class=\"btnTDdownload wait\">" +
+                                    "<svg class=\"btnTDdownload\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
+                                    "<g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">" +
+                                    "<g transform=\"translate(-264.000000, -96.000000)\" fill=\"#ffffff\">" +
+                                    "<path d=\"M276,112 C277.1,112 278,111.1 278,110 C278,108.9 277.1,108 276,108 C274.9,108 274,108.9 274,110 C274,111.1 274.9,112 276,112 Z M276,96 C269.4,96 264,101.4 264,108 C264,114.6 269.4,120 276,120 C282.6,120 288,114.6 288,108 C288,101.4 282.6,96 276,96 Z M280.2,99.4 C279.5,98.7 278.8,98.7 278.1,99.4 L273.9,103.6 C273.2,104.3 273.2,105 273.9,105.7 C274.6,106.4 275.3,106.4 276,105.7 L278.2,103.5 L278.2,111 C278.2,111.9 279.1,112.8 280,112.8 C280.9,112.8 281.8,111.9 281.8,111 L281.8,103.5 L284,105.7 C284.7,106.4 285.4,106.4 286.1,105.7 C286.8,105 286.8,104.3 286.1,103.6 L280.2,99.4 Z\"></path>" +
+                                    "</g>" +
+                                    "</g>" +
+                                    "</svg>" +
+                                    Lampa.Lang.translate('openSystemApp') +
+                                    "</div>",
                             send2app: send2systemApp,
                             onSelect: onSelectApp
                         });
                     }
                 }
-            }
         });
     }
 
